@@ -1,0 +1,136 @@
+extends ../layout
+
+block content
+
+	#banner
+		#slogan
+			h1
+				b My Property, London
+			h3 
+				b 2 Riding House Street, W1W 7FA
+
+	#section2.container
+		.row
+			.col-md-4#info
+				div
+					span.icon-star Rated Average of 4.7 by 277 students
+				div
+					span.icon-home 588 Total Beds
+				.btn.btn-primary.hidden-xs.hidden-sm Contact and expert
+			.col-md-8
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae blandit felis. Sed nec magna pulvinar, consectetur purus vitae, sodales lectus. Donec tincidunt egestas libero, ut rhoncus nisi porttitor vel. Fusce sodales nisi eros, ut placerat augue tempor vel. Pellentesque viverra malesuada ipsum, eu iaculis tortor vehicula a. Curabitur non posuere tellus. Etiam nec eleifend dolor. Curabitur auctor, nisl porta consectetur ultricies, nunc velit cursus eros, vitae finibus leo lacus id lorem. In hac habitasse platea dictumst. Nulla fermentum porttitor ex, eget maximus enim. Nam scelerisque placerat augue id tristique. Suspendisse sit amet dignissim mi. Sed bibendum justo lectus, et faucibus tortor maximus sagittis.
+		.row.hidden-md.hidden-lg
+			.btn.btn-primary.col-xs-10.col-xs-offset-1 Contact and expert
+
+	.container
+		.row
+			h3.col-md-12 Room Types
+	#section3.container
+		.row
+			.col-md-3
+				.wrapper.hidden-xs.hidden-sm
+					.bg
+						.rec
+						.tri
+					ul.nav.nav-pills.nav-stacked
+						each room,index in rooms
+							li 
+								a #{ucfirst(index)}
+				.wrapper.hidden-md.hidden-lg
+					select(id="roomType" class="form-control")
+						each room,index in rooms
+							option(value="#{index}") #{ucfirst(index)}
+
+			.col-md-8.detail
+				each room,index in rooms
+					.content
+						.icon-guidedog
+							.title
+								h2 #{ucfirst(index)} Room
+								h5 The acoomodation for pet lovers
+						.text 
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae blandit felis. Sed nec magna pulvinar, consectetur purus vitae, sodales lectus. Donec tincidunt egestas libero, ut rhoncus nisi porttitor vel. Fusce sodales nisi eros, ut placerat augue tempor vel. Pellentesque viverra malesuada ipsum, eu iaculis tortor vehicula a. Curabitur non posuere tellus. Etiam nec eleifend dolor. Curabitur auctor, nisl porta consectetur ultricies, nunc velit cursus eros, vitae finibus leo lacus id lorem. In hac habitasse platea dictumst. Nulla fermentum porttitor ex, eget maximus enim. Nam scelerisque placerat augue id tristique. Suspendisse sit amet dignissim mi. Sed bibendum justo lectus, et faucibus tortor maximus sagittis.
+						-var length = 	room.friends.length
+						if  length==1
+							table
+								tr
+									td 
+										.icon-share
+									td
+										span #{room.friends} has stayed here
+						if  length==2
+							table
+								tr
+									td 
+										.icon-share
+									td
+										span #{room.friends[0]} and #{room.friends[1]} has stayed here
+						if  length==3
+							table
+								tr
+									td 
+										.icon-share
+									td
+										span #{room.friends[0]} , #{room.friends[1]} and 1 other friend has stayed here
+						if  length>3
+							-var others = length-2
+							table
+								tr
+									td 
+										.icon-share
+									td
+										span #{room.friends[0]} , #{room.friends[1]} and #{others} other friends has stayed here
+
+
+						h3.facilities Facilities
+						.form-group
+							.checkbox
+								label
+									input(type="checkbox" name="tv" checked="checked")
+									span Television
+							.checkbox
+								label
+									input(type="checkbox" name="tv" checked="checked")
+									span CCTV
+							.checkbox
+								label
+									input(type="checkbox" name="tv" checked="checked")
+									span Microwave
+							.checkbox
+								label
+									input(type="checkbox" name="tv" checked="checked")
+									span Laundry
+							.checkbox
+								label
+									input(type="checkbox" name="tv" checked="checked")
+									span Table and chairs
+							.checkbox
+								label
+									input(type="checkbox" name="tv" checked="checked")
+									span Dolor sit
+							.checkbox
+								label
+									input(type="checkbox" name="tv" checked="checked")
+									span WIFI
+							.checkbox
+								label
+									input(type="checkbox" name="tv" checked="checked")
+									span Bike Storage
+							.checkbox
+								label
+									input(type="checkbox" name="tv" checked="checked")
+									span Laundry
+							.checkbox
+								label
+									input(type="checkbox" name="tv" checked="checked")
+									span Lorem ipsum
+							.checkbox
+								label
+									input(type="checkbox" name="tv" checked="checked")
+									span Dolor sit
+							.checkbox
+								label
+									input(type="checkbox" name="tv" checked="checked")
+									span Sit amet
+
+

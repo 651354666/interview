@@ -1,0 +1,28 @@
+{
+  "name": "List movies",
+  "description": "A site to manage movies",
+  "main": "",
+  "authors": [
+    "DING"
+  ],
+  "license": "0.0.1",
+  "keywords": [
+    "movies",
+    "moogose",
+    "nodejs",
+    "express",
+    "jade"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

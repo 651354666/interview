@@ -1,0 +1,290 @@
+.page-header
+{
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#header .nav-pills > li
+{
+    width: 120px;
+    margin: 0;
+    text-align: center;
+}
+
+#header .nav-pills > li.tri,
+#header .nav-pills > li.tri2
+{
+    width: auto;
+}
+
+#header .nav-pills > li > a
+{
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+}
+
+#header .nav-pills > li > a:hover
+{
+    color: #ddd;
+}
+
+#header .nav-pills > li.tri > a
+{
+    width: 0;
+    height: 0;
+    padding: 0;
+    border: 20px solid transparent;
+    border-left: 20px solid #337ab7;
+    background: none;
+}
+
+#header .nav-pills > li.tri2 > a
+{
+    width: 0;
+    height: 0;
+    margin-left: -39px;
+    padding: 0;
+    border: 20px solid #337ab7;
+    border-left: 20px solid transparent;
+    background: none;
+}
+
+#banner
+{
+    width: 100%;
+    height: 450px;
+    background: url(/public/images/image.jpg);
+    background-size: cover;
+}
+
+#banner:before
+{
+    display: inline-block;
+    height: 100%;
+    content: '';
+    vertical-align: middle;
+}
+
+#slogan
+{
+    display: inline-block;
+    margin-left: 5%;
+    vertical-align: middle;
+    color: #fff;
+}
+
+#slogan h3
+{
+    margin-top: 0;
+}
+
+#section2
+{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#info
+{
+    float: right;
+}
+
+#info div
+{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+#info .btn
+{
+    width: 80%;
+    min-width: 150px;
+    margin-top: 20px;
+}
+
+#section3
+{
+    padding-bottom: 50px;
+}
+
+#section3 ul
+{
+    width: 70%;
+    border: 1px solid;
+}
+
+#section3 .nav-pills > li > a
+{
+    cursor: pointer;
+    border-radius: 0;
+}
+
+#section3 .nav > li > a:focus,
+#section3 .nav > li > a.active
+{
+    color: #fff;
+    background: none;
+}
+
+#section3 .icon-guidedog:before
+{
+    font-size: 50px;
+    line-height: 58px;
+    display: block;
+    float: left;
+}
+
+#section3 .content
+{
+    display: none;
+}
+
+#section3 .content td:first-child
+{
+    width: 25px;
+}
+
+#section3 .wrapper
+{
+    position: relative;
+    margin-top: 20px;
+}
+
+#section3 .wrapper .bg
+{
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    transition: top .5s;
+}
+
+#section3 .wrapper .bg .rec
+{
+    float: left;
+    width: 70%;
+    height: 40px;
+    background: #337ab7;
+}
+
+
+#section3 .bg .tri
+{
+    float: left;
+    width: 0;
+    height: 0;
+    padding: 0;
+    border: 20px solid transparent;
+    border-left: 20px solid #337ab7;
+    background: none;
+}
+
+#section3 .nav-stacked > li + li
+{
+    margin: 0;
+}
+
+#section3 table
+{
+    margin-top: 30px;
+}
+
+h3.facilities
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.checkbox
+{
+    float: left;
+    width: 25%;
+    margin-top: 0;
+}
+
+.checkbox + .checkbox
+{
+    margin-top: 0;
+}
+
+
+@media (max-width: 991px)
+{
+    #info
+    {
+        float: none;
+    }
+}
+
+@media (max-width: 767px)
+{
+    #header .nav-pills > li
+    {
+        width: 20%;
+    }
+
+    #banner
+    {
+        height: 200px;
+    }
+
+    #slogan h1
+    {
+        font-size: 2em;
+    }
+
+    #slogan h3
+    {
+        font-size: 1em;
+    }
+
+    #section2
+    {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    #section2 .btn
+    {
+        margin-top: 20px;
+    }
+
+    #share:before
+    {
+        display: inline-block;
+        vertical-align: top;
+    }
+    #share span
+    {
+        display: inline-block;
+        width: 80%;
+    }
+
+    .checkbox
+    {
+        float: left;
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .checkbox + .checkbox
+    {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 409px)
+{
+    #header .nav-pills > li
+    {
+        width: 33.33333333%;
+    }
+
+    #header .nav-pills > li.tri,
+    #header .nav-pills > li.tri2
+    {
+        display: none;
+    }
+}
